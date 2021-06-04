@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+body, main {
+  font-family: 'Mate SC', serif;
+}
+
+header {
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #444;
+}
+
+@media screen and (min-width: 521px){
+  header {
+    background-color: #999;
+    height: 33px;
+  }
+  
+  #navbar {
+  position: fixed;
+  float: right;
+  top: 0;
+  right: 0;
+  background-color: #999;
+  border: 2px solid #999;
+  padding: 5px 5px 5px 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #003;
+}
+  
+ span {
+   visibility: hidden;
+   position: absolute;
+   left: -999em;
+  }
+}
+
+@media screen and (max-width: 520px){ /*amikor a legnagyobb kepernyo meret 360px akkor lepjen eletbe ez a stilus*/
+  
+  header{
+    background-color: #999;
+    height: 33px;
+  }
+  
+  #navbar { /*a navbar teljesen eltunik az oldal lathatosagabol, meg helyet sem foglal*/
+    visibility: hidden;
+    left: -999em;
+  }
+  
+  i { /* az ikon megjelenik menukent mukodik*/
+    visibility: visible;
+    position: fixed;
+    float: right;
+    top: 0;
+    right: 10px;
+  }
+  
+  i:hover {
+    background-color: #999;
+  }
+  
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0px solid #999;
+    padding: 15px 10px 15px 10px;
+    background-color: #444;
+    color: #003;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: #999;
+  }
+  
+  span:hover {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  #home {
+    margin-top: 33px;
+  }
+}
