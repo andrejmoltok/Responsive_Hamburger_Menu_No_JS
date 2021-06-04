@@ -4,31 +4,25 @@ body, main {
   font-family: 'Mate SC', serif;
 }
 
-header {
-  width: 100%;
-  height: 30px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #444;
-}
-
 @media screen and (min-width: 521px){
   header {
     background-color: #999;
     height: 33px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
   }
   
   #navbar {
-  position: fixed;
-  float: right;
-  top: 0;
-  right: 0;
-  background-color: #999;
-  border: 2px solid #999;
-  padding: 5px 5px 5px 5px;
-}
+   position: fixed;
+   float: right;
+   top: 0;
+   right: 0;
+   background-color: #999;
+   border: 2px solid #999;
+   padding: 5px 5px 5px 5px;
+ }
 
 a {
   text-decoration: none;
@@ -47,6 +41,10 @@ a {
   header{
     background-color: #999;
     height: 33px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
   }
   
   #navbar { /*a navbar teljesen eltunik az oldal lathatosagabol, meg helyet sem foglal*/
