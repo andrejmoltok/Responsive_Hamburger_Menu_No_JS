@@ -1,32 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
 
+:root {
+  --bgcolor: #999;
+  --bgcolor2: #444;
+  --clr: #003;
+  --martop:  33px;
+}
+
 body, main {
   font-family: 'Mate SC', serif;
 }
 
 @media screen and (min-width: 521px){
-  header {
-    background-color: #999;
-    height: 33px;
+
+header {
+    background-color: var(--bgcolor);
+    height: var(--martop);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
   }
   
-  #navbar {
-   position: fixed;
-   float: right;
-   top: 0;
-   right: 0;
-   background-color: #999;
-   border: 2px solid #999;
-   padding: 5px 5px 5px 5px;
- }
+#navbar {
+  position: fixed;
+  float: right;
+  top: 0;
+  right: 0;
+  background-color: var(--bgcolor);
+  border: 2px solid var(--bgcolor);
+  padding: 5px 5px 5px 5px;
+}
 
 a {
   text-decoration: none;
-  color: #003;
+  color: var(--clr);
 }
   
  span {
@@ -39,8 +47,8 @@ a {
 @media screen and (max-width: 520px){ /*amikor a legnagyobb kepernyo meret 360px akkor lepjen eletbe ez a stilus*/
   
   header{
-    background-color: #999;
-    height: 33px;
+    background-color: var(--bgcolor);
+    height: var(--martop);
     position: fixed;
     top: 0;
     left: 0;
@@ -52,41 +60,42 @@ a {
     left: -999em;
   }
   
-  i { /* az ikon megjelenik menukent mukodik*/
+  i { 
     visibility: visible;
     position: fixed;
     float: right;
     top: 0;
     right: 10px;
-  }
+  } 
   
   i:hover {
-    background-color: #999;
+    background-color: var(--bgcolor);
   }
   
   a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 0px solid #999;
+    border: 0px solid var(--bgcolor);
     padding: 15px 10px 15px 10px;
-    background-color: #444;
-    color: #003;
+    background-color: var(--bgcolor2);
+    color: var(--clr);
     text-decoration: none;
   }
   
   a:hover {
-    background-color: #999;
+    background-color: var(--bgcolor);
   }
   
   span:hover {
     visibility: visible;
     position: fixed;
+    float:  right;
     top: 0;
     right: 0;
   }
 
   #home {
-    margin-top: 33px;
+    margin-top: var(--martop);
   }
 }
