@@ -24,7 +24,8 @@ header {
   
 #navbar {
   position: fixed;
-  float: right;
+  display:  flex;
+  flex-direction: row;
   top: 0;
   right: 0;
   background-color: var(--bgcolor);
@@ -35,6 +36,7 @@ header {
 a {
   text-decoration: none;
   color: var(--clr);
+  padding: 0 5px 0 5px;
 }
   
  span {
